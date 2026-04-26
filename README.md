@@ -43,12 +43,7 @@ ld -o double double.o
 echo "21" | ./double
 ```
 
-**Option B: heredoc:**
-```bash
-./double <<< "42"
-```
-
-**Option C: interactive (type number, press Enter):**
+**Option B: interactive (type number, press Enter):**
 ```bash
 ./double
 ```
