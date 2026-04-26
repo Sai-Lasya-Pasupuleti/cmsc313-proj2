@@ -1,4 +1,4 @@
-# double.s — Assembly "Double a Number" Program
+# double.s: Assembly "Double a Number" Program
 
 Reads an integer from stdin, doubles it, and prints `The double is: <result>`.
 
@@ -26,29 +26,29 @@ Written in x86-64 GAS (AT&T syntax) using raw Linux syscalls — no C runtime re
 
 ## Build & Run (GL Server)
 
-### Step 1 — Assemble
+### Step 1: Assemble
 ```bash
 as -o double.o double.s
 ```
 
-### Step 2 — Link
+### Step 2: Link
 ```bash
 ld -o double double.o
 ```
 
-### Step 3 — Run
+### Step 3: Run
 
-**Option A — pipe input:**
+**Option A: pipe input:**
 ```bash
 echo "21" | ./double
 ```
 
-**Option B — heredoc:**
+**Option B: heredoc:**
 ```bash
 ./double <<< "42"
 ```
 
-**Option C — interactive (type number, press Enter):**
+**Option C: interactive (type number, press Enter):**
 ```bash
 ./double
 ```
